@@ -1,5 +1,7 @@
-# KOALA
+# [KOALA](https://youngwanlee.github.io/KOALA/)
 Homepage of KOALA: Self-Attention Matters in Knowledge Distillation of Latent Diffusion Models for Memory-Efficient and Fast Image Synthesis. 
+
+
 
 This website is adapted from [Nerfies website](https://nerfies.github.io) and [Pixart](https://github.com/PixArt-alpha/PixArt-alpha.github.io).
 
