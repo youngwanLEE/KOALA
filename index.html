@@ -254,8 +254,8 @@
     <section class="hero is-small">
         <div class="hero-body">
             <div class="container is-max-desktop">
-                <h2 class="title is-3">Latency and memory usage comparison on a variety of consumer-grade GPUs.</h2>
-                <p>We measure the inference time of SDM-v2.0 with 768x768 resolution and the other models with 1024x1024 using different GPUS: NVIDIA 3060Ti (8GB), 2080Ti (11GB), and 4090 (24GB). We use 25 denoising steps and FP16/FP32 precisions. OOM means Out-of-Memory. Note that SDXL-Base cannot operate in the 8GB-GPU.
+                <h2 class="title is-3">Latency and memory usage comparison on different GPUs.</h2>
+                <p>We measure the inference time of SDM-v2.0 with 768x768 resolution and the other models with 1024x1024 using a variety of consumer-grade GPUs: NVIDIA 3060Ti (8GB), 2080Ti (11GB), and 4090 (24GB). We use 25 denoising steps and FP16/FP32 precisions. OOM means Out-of-Memory. Note that SDXL-Base cannot operate in the 8GB-GPU.
                 </p>
                 <br>
                 <img loading="lazy" src="static/images/latency_gpu.svg" alt="efficiency" />
@@ -271,7 +271,9 @@
                     target="_blank">SDM-v2.0</a> and <a
                     href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
                     target="_blank">SDXL-Base-1.0</a>) in the huggingface repository. 
-                    Specifically, SDM-v2.0 is set to generate with DDIM scheduler with 25 steps and SDXL and ours are set to use Euler discrete scheduler with 25 steps. And we set all models to use the classifier-free guidance with 7.5.
+                    Specifically, SDM-v2.0 is set to generate with DDIM scheduler with 25 steps and SDXL and ours are set to use Euler discrete scheduler with 25 steps. 
+                    And we set all models to use the classifier-free guidance with 7.5.
+                    Except DALLE-2, we generate all images with FP16 precision.
                 For DALLE-2, we get generated images via OpenAI API.
                 <br>
                 </p>
